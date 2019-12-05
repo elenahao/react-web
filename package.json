@@ -1,0 +1,19 @@
+{
+  "name": "react-web",
+  "version": "1.0.0",
+  "description": "基于webpack与react的后台管理项目",
+  "main": "index.js",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.config.js",
+    "build": "webpack --config webpack.prod.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
