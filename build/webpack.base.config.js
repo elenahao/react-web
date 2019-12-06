@@ -3,16 +3,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	entry: {
-		main: './src/app.jsx'
+		main: './src/index.jsx'
 	},
 	module: {
 		rules: [{
-			test: /\.jsx$/,
+			test: /\.(js|jsx)$/,
 			exclude: /node_modules/,
 			use: {
 				loader: 'babel-loader',
 				options: {
-					presets: ["@babel/preset-env"]
+					presets: ['@babel/preset-env', '@babel/preset-react']
 				}
 			}
 		},{
