@@ -1,14 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
 	entry: {
-		main: './src/index.js'
+		main: './src/app.jsx'
 	},
 	module: {
 		rules: [{
-			test: /\.js$/,
+			test: /\.jsx$/,
 			exclude: /node_modules/,
 			use: {
 				loader: 'babel-loader',
@@ -63,10 +62,6 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			//以这个为模板来生成
 			template: 'src/index.html'
-		}),
-		//打包前将dist目录删掉
-		new CleanWebpackPlugin(['dist'],{
-			root: path.resolve(__dirname, '../')
 		})
 	],
 	optimization: {
