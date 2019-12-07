@@ -1,10 +1,7 @@
-import React, {Component} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import App from "./view/app";``
-import "antd/dist/antd.css";
-import "./asserts/index.css";
+import App from "./view/app";
+// import "antd/dist/antd.css";
+import "./static/index.css";
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-);
+ReactDOM.render(<App />, document.getElementById("app"));

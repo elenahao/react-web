@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import { version } from "antd";
+@import '~antd/dist/antd.less';
 
 class App extends Component {
 	render(){
