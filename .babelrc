@@ -1,0 +1,18 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "corejs": 2, //需要指定corejs版本文档并没有写  不要用3  目前3还有点问题
+                "useBuiltIns": "usage" //按需引入polyfill
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        [
+            "import",
+            { "libraryName": "antd", "libraryDirectory": "es", "style": "true" }
+        ]
+    ]
+}
